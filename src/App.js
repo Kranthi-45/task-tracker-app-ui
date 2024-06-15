@@ -7,6 +7,8 @@ import { ErrorPage } from './pages/ErrorPage';
 import { Row, Col } from "antd";
 import BaseComponent from './components/BaseComponent';
 
+// import 'antd/dist/antd.css'; // Import Ant Design CSS
+
 function App() {
   return (
     <div className="App">

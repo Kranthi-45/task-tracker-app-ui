@@ -6,6 +6,11 @@
     min-height: 100vh !important;
 }
 
+.logo{
+    width: 100px;
+    border-radius: 30px;
+}
+
 /* BaseLayout css ends */
 
 /* Footer css starts */
@@ -31,3 +36,16 @@
 }
 
 /* common css ends */
+
+
+.error-page-container{
+
+    margin: auto;
+    text-align: center;
+
+}
+.error-image{
+    text-align: center;
+    width: 400px;
+
+}

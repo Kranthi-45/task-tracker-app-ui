@@ -45,7 +45,11 @@ const BaseComponent = () => {
                     alignItems: 'center',
                 }}
             >
-                <div className="demo-logo" />
+                <div className="demo-logo" >
+                  {/* <img src='../../public/assets/images/task-tracker-image.png' /> */}
+                  <img src={`${process.env.PUBLIC_URL}/assets/images/task-tracker-image.png`} alt="Task Tracker Image" className='logo' />
+
+                </div>
                 <Menu
                     theme="dark"
                     mode="horizontal"
