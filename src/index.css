@@ -11,3 +11,26 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Some base css for better css alignment & layout  starts */
+
+html, body {
+  /* max-width: 100%; */
+  overflow-x: hidden !important;
+}
+
+html, body {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'Product sans regular' !important;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'Product sans regular' !important;
+}
+
+/* Some base css for better css alignment & layout end */

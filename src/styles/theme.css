@@ -1,0 +1,33 @@
+/* BaseComponent css starts */
+
+/* BaseLayout css starts */
+
+.base-layout-container{
+    min-height: 100vh !important;
+}
+
+/* BaseLayout css ends */
+
+/* Footer css starts */
+
+.footer{
+    text-align: center;
+   /* background: #001529;*/ 
+   /* color: white;  */ 
+    width: 100%;
+    position: sticky;
+    bottom: 0;
+    z-index: 100;
+}
+
+/* Footer css starts */
+
+/* BaseComponent ends starts */
+
+/* common css starts */
+
+.title{
+    text-align: center;
+}
+
+/* common css ends */
