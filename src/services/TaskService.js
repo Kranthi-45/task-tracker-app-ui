@@ -1,8 +1,11 @@
 // Import Axios library
 import axios from 'axios';
 
+import { ADD_TASK_URL, BASE_URL, DELETE_TASK_URL, EDIT_TASK_URL, VIEW_TASK_URL } from '../constants';
+
 // Base URL of your backend API
-const BASE_URL = 'https://api.example.com';
+// const BASE_URL = 'https://api.example.com';
+
 
 // Function to handle errors (optional)
 const handleErrors = (error) => {
@@ -13,7 +16,7 @@ const handleErrors = (error) => {
 // POST request example
 export const addTask = async (data) => {
   try {
-    const response = await axios.post(`${BASE_URL}/${BASE_URL}`, data);
+    const response = await axios.post(`${BASE_URL}/${ADD_TASK_URL}`, data);
     return response.data;
   } catch (error) {
     handleErrors(error);
@@ -23,7 +26,7 @@ export const addTask = async (data) => {
 // PUT request example
 export const updateTask = async (data) => {
   try {
-    const response = await axios.put(`${BASE_URL}/${BASE_URL}`, data);
+    const response = await axios.put(`${BASE_URL}/${EDIT_TASK_URL}`, data);
     return response.data;
   } catch (error) {
     handleErrors(error);
@@ -33,7 +36,7 @@ export const updateTask = async (data) => {
 // GET request example
 export const getAllTasks = async () => {
   try {
-    const response = await axios.get(`${BASE_URL}/${BASE_URL}`);
+    const response = await axios.get(`${BASE_URL}/${VIEW_TASK_URL}`);
     return response.data;
   } catch (error) {
     handleErrors(error);
@@ -43,7 +46,7 @@ export const getAllTasks = async () => {
 // DELETE request example
 export const removeTask = async (endpoint) => {
   try {
-    const response = await axios.delete(`${BASE_URL}/${endpoint}`);
+    const response = await axios.delete(`${BASE_URL}/${DELETE_TASK_URL}`);
     return response.data;
   } catch (error) {
     handleErrors(error);

@@ -3,7 +3,7 @@ import { Button, Input, Popover, Space, Table, Tag, Tooltip } from 'antd';
 import qs from 'qs';
 import { DeleteOutlined, EditOutlined, EyeOutlined, SearchOutlined } from '@ant-design/icons';
 import Highlighter from 'react-highlight-words';
-import { BASE_APP_URL } from '../constant';
+import { BASE_URL } from '../constants';
 // import 'antd/antd.css';  // Make sure this import is present in your project
 
 // import "antd/dist/antd.css";
@@ -237,7 +237,7 @@ const ViewTasksComponent = (props) => {
 
     const handleViewForm = (e) => {
         console.log("View Task", e);
-        console.log("View Task", BASE_APP_URL);
+        console.log("View Task", BASE_URL);
         props.setTaskFormData(e);
     }
 
